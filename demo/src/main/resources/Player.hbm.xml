@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="Player" table="player">
+
+        <meta attribute="class-description">
+            This class contains the player detail.
+        </meta>
+
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+
+        <property name="name" column="player_name" type="string"/>
+        <property name="age" column="age" type="int"/>
+        <property name="acceleration" column="acceleration" type="int"/>
+        <property name="endurance" column="endurance" type="int"/>
+        <property name="form" column="form" type="int"/>
+        <property name="mental" column="mental" type="int"/>
+        <property name="speed" column="speed" type="int"/>
+        <property name="stamina" column="stamina" type="int"/>
+        <property name="start" column="start" type="int"/>
+        <property name="place" column="lastRacePlace" type="int"/>
+        <property name="fastest100m" column="fastest100m" type="double"/>
+        <property name="fastest200m" column="fastest200m" type="double"/>
+        <property name="fastest400m" column="fastest400m" type="double"/>
+        <property name="lastRaceTime" column="lastRaceTime" type="double"/>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,7 @@
+/*C3*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C2*/SET SCHEMA PUBLIC
+create table EMPLOYEE (\u000a   id INT PRIMARY KEY NOT NULL,\u000a   first_name VARCHAR(20) default NULL,\u000a   last_name  VARCHAR(20) default NULL,\u000a   salary    INT  default NULL,\u000a)
+DROP TABLE employee\u000a
+create table EMPLOYEE (\u000a   id INT IDENTITY not NULL,\u000a   first_name VARCHAR(20) default NULL,\u000a   last_name  VARCHAR(20) default NULL,\u000a   salary     INT  default NULL,\u000a   PRIMARY KEY (id)\u000a)
+create table player (\u000a   id INT IDENTITY not NULL,\u000a   first_name VARCHAR(20) default NULL,\u000a   last_name  VARCHAR(20) default NULL,\u000a   acceleration INT default NULL,\u000a   age INT default NULL,\u000a   endurance INT default NULL,\u000a   form INT  default NULL,\u000a   mental INT default NULL,\u000a   speed INT default NULL,\u000a   stamina INT default NULL,\u000a   start INT default NULL,\u000a   lastRacePlace INT default NULL,\u000a   fastest100m double default NULL,\u000a   fastest200m double default NULL,\u000a   fastest400m double default NULL,\u000a   lastRaceTime double default NULL,\u000a   PRIMARY KEY (id)\u000a)
